@@ -1,7 +1,7 @@
 import { authMiddleware } from "@clerk/nextjs";
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
-import { type NextRequest, NextResponse } from "next/server";
+import type { NextRequest, NextResponse } from "next/server";
 import { env } from "./env.mjs";
 
 const redis = new Redis({
